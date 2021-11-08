@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Entrada;
+use Faker\Core\Number;
 
 class EntradaController extends Controller
 {
@@ -28,6 +29,7 @@ class EntradaController extends Controller
 
     public function show(Entrada $entrada)
     {
+        $entrada = Entrada::findOrFail($entrada);
         return response()->json($entrada);
     }
 

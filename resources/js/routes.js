@@ -18,8 +18,8 @@ export const routes = [
         component: Contacto,
     },
     {
-        name: "mostrarEntradas",
-        path: "/entradas",
+        name: "mostrarEntrada",
+        path: "/entrada/:id",
         component: Mostrar,
     },
     {

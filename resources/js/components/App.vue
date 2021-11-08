@@ -8,9 +8,8 @@
                 px-4
                 py-3
                 ring-red-800
-                bg-gradient-to-r
-                from-indigo-300
-                to-blue-300
+                bg-blue-400
+                rounded-b-3xl
             "
         >
             <div class="flex flex-none items-center">
@@ -35,7 +34,7 @@
                 </ul> -->
             </div>
 
-            <div class="flex flex-grow items-center">
+            <div class="flex  items-stretch">
                 <div>
                     <input
                         type="text"
@@ -49,7 +48,7 @@
                             px-2.5
                             py-1
                             outline-none
-                            focus:bg-gray-200
+                            focus:bg-gray-100
                         "
                         placeholder=" Buscar..."
                     />
@@ -68,5 +67,9 @@
                 ></a>
             </div>
         </nav>
+        <div class="container mt-5">
+            <router-view></router-view>
+        </div>
     </main>
 </template>
+
