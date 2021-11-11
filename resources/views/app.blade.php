@@ -15,7 +15,7 @@
     <div id="app">
 
     </div>
-<!--     <div class="bg-gradient-to-r
+    <!--     <div class="bg-gradient-to-r
                 from-indigo-300
                 to-blue-300"></div> -->
     <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>

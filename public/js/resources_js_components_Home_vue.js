@@ -40,6 +40,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "entradas",
   data: function data() {
@@ -945,14 +951,18 @@ var render = function () {
             "router-link",
             {
               staticClass: "text-blue-500 text-2xl",
-              attrs: { to: { path: "/entrada", query: { id: "id" } } },
+              attrs: {
+                to: { name: "mostrarEntrada", params: { entrada: entrada } },
+              },
             },
             [_vm._v(_vm._s(entrada.titulo))]
           ),
           _vm._v(" "),
-          _c("p", { staticClass: "py-2" }, [_vm._v(_vm._s(entrada.subtitulo))]),
+          _c("p", { staticClass: "pb-2 dark:text-gray-200" }, [
+            _vm._v(_vm._s(entrada.subtitulo)),
+          ]),
           _vm._v(" "),
-          _c("hr"),
+          _c("hr", { staticClass: "dark:bg-gray-100" }),
         ],
         1
       )

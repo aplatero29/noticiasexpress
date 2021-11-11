@@ -8,6 +8,10 @@ const Editar = () => import("./components/entrada/Editar.vue");
 
 export const routes = [
     {
+        path: "*",
+        component: Home,
+    },
+    {
         name: "home",
         path: "/",
         component: Home,
@@ -19,7 +23,7 @@ export const routes = [
     },
     {
         name: "mostrarEntrada",
-        path: "/entrada/:id",
+        path: "/entrada",
         component: Mostrar,
     },
     {
@@ -29,7 +33,7 @@ export const routes = [
     },
     {
         name: "editarEntradas",
-        path: "/editar/:id",
+        path: "/editar",
         component: Editar,
     },
 ];

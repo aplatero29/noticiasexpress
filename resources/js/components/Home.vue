@@ -1,13 +1,19 @@
 <template>
     <main class="container">
+        
         <div v-for="entrada in entradas" :key="entrada.id">
-            <router-link class= "text-blue-500 text-2xl" :to="{ path: '/entrada', query: { id: 'id'}}">{{ entrada.titulo }}</router-link>
-            <p class="py-2">{{ entrada.subtitulo }}</p>
-            <hr />
+            <router-link
+                class="text-blue-500 text-2xl"
+                :to="{ name: 'mostrarEntrada', params: { entrada } }"
+                >{{ entrada.titulo }}</router-link
+            >
+            <p class="pb-2 dark:text-gray-200">{{ entrada.subtitulo }}</p>
+            <hr class="dark:bg-gray-100" />
         </div>
     </main>
 </template>
 
+//TODO: Arreglar router link :to
 <script>
 export default {
     name: "entradas",

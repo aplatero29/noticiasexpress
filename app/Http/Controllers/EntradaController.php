@@ -14,10 +14,10 @@ class EntradaController extends Controller
         return response()->json($entradas);
     }
 
-    public function create()
+    /* public function create()
     {
         # code...
-    }
+    } */
 
     public function store(Request $request)
     {
@@ -29,7 +29,7 @@ class EntradaController extends Controller
 
     public function show(Entrada $entrada)
     {
-        $entrada = Entrada::findOrFail($entrada);
+        $entrada = Entrada::where('id',$entrada->id)->first();
         return response()->json($entrada);
     }
 

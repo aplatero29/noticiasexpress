@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": [
+          "resources/js/*"
+        ],
+        "@editorcomponents/*": [
+          "resources/js/components/editor/*"
+        ],
+        "@editormodals/*": [
+          "resources/js/components/editor/modals/*"
+        ],
+        "@editormodules/*": [
+          "resources/js/components/editor/modules/*"
+        ],
+        "@previewcomponents/*": [
+          "resources/js/components/preview/*"
+        ],
+        "@previewmodals/*": [
+          "resources/js/components/preview/modals/*"
+        ],
+        "@previewmodules/*": [
+          "resources/js/components/preview/modules/*"
+        ]
+      }
+    },
+    "exclude": [
+      "node_modules",
+      "public"
+    ]
+  }

@@ -60,7 +60,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return axios.get("api/entrada").then(function (res) {
+                return axios.get("api/entradas/".concat(_this.$route.params.id)).then(function (res) {
                   console.log(res);
                   _this.entrada = res.data;
                 })["catch"](function (err) {

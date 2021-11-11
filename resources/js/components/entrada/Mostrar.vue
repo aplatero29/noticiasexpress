@@ -23,7 +23,7 @@ export default {
     methods: {
         async getEntrada() {
             await axios
-                .get("api/entrada")
+                .get(`api/entradas/${this.$route.params.id}`)
                 .then((res) => {
                     console.log(res);
                     this.entrada = res.data;

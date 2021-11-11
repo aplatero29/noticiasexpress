@@ -15,8 +15,11 @@ class CreateEntradasTable extends Migration
     {
         Schema::create('entradas', function (Blueprint $table) {
             $table->id();
+            /* $table->foreignId('usuario_id'); */
             $table->string('titulo');
             $table->string('subtitulo');
+            /* $table->string('enlace')->unique(); */
+
             $table->text('cuerpo');
             $table->timestamps();
         });

@@ -2,6 +2,9 @@
     <main>
         <nav
             class="
+            min-w-full
+                sticky
+                top-0
                 flex-row flex
                 items-center
                 justify-between
@@ -9,7 +12,7 @@
                 py-3
                 ring-red-800
                 bg-blue-400
-                rounded-b-3xl
+                rounded-b-3xl 
             "
         >
             <div class="flex flex-none items-center">
@@ -34,25 +37,25 @@
                 </ul> -->
             </div>
 
-            <div class="flex  items-stretch">
-                <div>
-                    <input
-                        type="text"
-                        class="
-                            bg-gray-50
-                            text-md
-                            rounded-full
-                            md:
-                            w-full
-                            mx-10
-                            px-2.5
-                            py-1
-                            outline-none
-                            focus:bg-gray-100
-                        "
-                        placeholder=" Buscar..."
-                    />
-                </div>
+            <div class="flex items-stretch w-2/5">
+                <input
+                    type="text"
+                    class="
+                        bg-gray-50
+                        text-md
+                        rounded-full
+                        w-full
+                        mx-10
+                        px-2.5
+                        py-1
+                        outline-none
+                        focus:bg-gray-100
+                        dark:bg-gray-800
+                        dark:text-gray-100
+                        dark:focus:bg-gray-700
+                    "
+                    placeholder=" Buscar..."
+                />
             </div>
 
             <div class="flex flex-none items-center mb-2">
@@ -73,3 +76,9 @@
     </main>
 </template>
 
+//TODO: Transformar navbar a componente
+<script>
+export default {
+    components: 1,
+};
+</script>
