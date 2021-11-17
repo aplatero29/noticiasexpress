@@ -958,11 +958,9 @@ var render = function () {
             [_vm._v(_vm._s(entrada.titulo))]
           ),
           _vm._v(" "),
-          _c("p", { staticClass: "pb-2 dark:text-gray-200" }, [
-            _vm._v(_vm._s(entrada.subtitulo)),
-          ]),
+          _c("p", { staticClass: "pb-2" }, [_vm._v(_vm._s(entrada.subtitulo))]),
           _vm._v(" "),
-          _c("hr", { staticClass: "dark:bg-gray-100" }),
+          _c("hr", {}),
         ],
         1
       )

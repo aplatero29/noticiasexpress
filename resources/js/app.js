@@ -8,7 +8,7 @@ require("./bootstrap");
 import vue from "vue";
 window.Vue = vue;
 
-import App from "./components/App.vue";
+import App from "./App.vue";
 
 //Importamos Tailwind desde el archivo css
 import "../css/app.css";

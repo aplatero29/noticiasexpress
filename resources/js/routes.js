@@ -1,16 +1,16 @@
-const Home = () => import("./components/Home.vue");
-const Contacto = () => import("./components/Contacto.vue");
+const Home = () => import("./paginas/Home.vue");
+const Contacto = () => import("./paginas/Contacto.vue");
 
-//Importar componentes entrada
-const Mostrar = () => import("./components/entrada/Mostrar.vue");
-const Crear = () => import("./components/entrada/Crear.vue");
-const Editar = () => import("./components/entrada/Editar.vue");
+//Importar paginas entrada
+const Mostrar = () => import("./paginas/entradas/Mostrar.vue");
+const Crear = () => import("./paginas/entradas/Crear.vue");
+const Editar = () => import("./paginas/entradas/Editar.vue");
 
 export const routes = [
-    {
+    /*     {
         path: "*",
-        component: Home,
-    },
+        component: 404,
+    }, */
     {
         name: "home",
         path: "/",
@@ -23,17 +23,17 @@ export const routes = [
     },
     {
         name: "mostrarEntrada",
-        path: "/entrada",
+        path: "/entrada/:id",
         component: Mostrar,
     },
     {
         name: "crearEntradas",
-        path: "/crear",
+        path: "/entrada/crear",
         component: Crear,
     },
     {
         name: "editarEntradas",
-        path: "/editar",
+        path: "/entrada/editar",
         component: Editar,
     },
 ];

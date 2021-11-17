@@ -29,6 +29,7 @@ class EntradaController extends Controller
 
     public function show(Entrada $entrada)
     {
+        
         $entrada = Entrada::where('id',$entrada->id)->first();
         return response()->json($entrada);
     }
